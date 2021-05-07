@@ -1,0 +1,33 @@
+{
+	"name": "zmcms/website_comercials",
+	"description": "Prosty system reklam w serwisie internetowym",
+	"authors": [
+		{
+		"name": "Piotr Szkudlarek",
+		"email": "pszkudlarek@zoltanmultimedia.pl"
+		}
+	],
+	"autoload": {
+		"psr-4": {
+			"Zmcms\\WebsiteComercials\\": "src/",
+			"Zmcms\\WebsiteComercials\\Backend\\Controllers\\": "src/backend/controllers/",
+			"Zmcms\\WebsiteComercials\\Backend\\Db\\": "src/backend/db/",
+			"Zmcms\\WebsiteComercials\\Backend\\Middleware\\": "src/backend/middleware/",
+			"Zmcms\\WebsiteComercials\\Backend\\Routes\\": "src/backend/routes/",
+			"Zmcms\\WebsiteComercials\\Frontend\\Controllers\\": "src/frontend/controllers/",
+			"Zmcms\\WebsiteComercials\\Frontend\\Db\\": "src/frontend/db/",
+			"Zmcms\\WebsiteComercials\\Frontend\\Middleware\\": "src/frontend/middleware/",
+			"Zmcms\\WebsiteComercials\\Frontend\\Routes\\": "src/frontend/routes/",
+			"Zmcms\\WebsiteComercials\\Migrations\\": "src/migrations/"
+		},
+		"files": ["src/helpers.php"]
+		},
+		"extra": {
+			"laravel": {
+			"providers": [
+				"Zmcms\\WebsiteComercials\\ZmcmsWebsiteComercialsServiceProvider"
+			]
+		}
+	},
+	"require": {}
+}
